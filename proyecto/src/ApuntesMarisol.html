@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apuntes de HTML, CSS y JavaScript</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        h1 {
+            color: green;
+        }
+        h2 {
+            color: blue;
+        }
+        ul {
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apuntes de Programación Web</h1>
+    <p>Por Kosta Vladov Vladov</p>
+    
+    <h2>1. HTML (HyperText Markup Language)</h2>
+    <p><b>Función principal:</b> Estructura el contenido de la web.</p>
+    <p><b>Etiquetas comunes:</b></p>
+    <ul>
+        <li>&lt;!DOCTYPE html&gt;: Declaración que indica el tipo de documento.</li>
+        <li>&lt;html&gt;: Contenedor de todo el contenido de la página.</li>
+        <li>&lt;head&gt;: Incluye metadatos como &lt;title&gt;, &lt;meta&gt;, y enlaces a CSS.</li>
+        <li>&lt;body&gt;: Contiene el contenido visible de la página.</li>
+        <li>&lt;h1&gt; a &lt;h6&gt;: Encabezados de mayor a menor importancia.</li>
+        <li>&lt;p&gt;: Párrafos de texto.</li>
+        <li>&lt;a href="URL"&gt;: Enlaces.</li>
+        <li>&lt;img src="URL" alt="descripción"&gt;: Imágenes.</li>
+    </ul>
+
+    <h2>2. CSS (Cascading Style Sheets)</h2>
+    <p><b>Función principal:</b> Estiliza y da formato a las páginas web.</p>
+    <p><b>Selectores básicos:</b></p>
+    <ul>
+        <li>elemento { propiedad: valor; }: Aplica estilos a todos los elementos de un tipo específico.</li>
+        <li>.clase { ... }: Selecciona elementos con una clase específica.</li>
+        <li>#id { ... }: Selecciona un único elemento con un ID específico.</li>
+        <li>elemento1 elemento2 { ... }: Selecciona elementos hijos.</li>
+    </ul>
+    <p><b>Propiedades comunes:</b></p>
+    <ul>
+        <li>color: Color del texto.</li>
+        <li>background-color: Color de fondo.</li>
+        <li>margin y padding: Espaciado exterior e interior.</li>
+        <li>border: Bordes (ancho, tipo y color).</li>
+    </ul>
+    <p><b>Media queries:</b> Adaptan los estilos a diferentes tamaños de pantalla.</p>
+    <pre>
+        @media (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+    </pre>
+
+    <h2>3. JavaScript</h2>
+    <p><b>Función principal:</b> Añade interactividad y funcionalidad dinámica a la web.</p>
+    <p><b>Conceptos clave:</b></p>
+    <ul>
+        <li><b>Variables:</b> Contenedores de datos. let, const, var.</li>
+        <li><b>Funciones:</b> Bloques de código que realizan una tarea específica.</li>
+    </ul>
+    <pre>
+        function saludo(nombre) {
+            console.log("Hola, " + nombre);
+        }
+        saludo("Marta");
+    </pre>
+    <p><b>Eventos:</b> Respuestas a acciones del usuario (clics, teclado, etc.).</p>
+    <pre>
+        document.getElementById("boton").onclick = function() {
+            alert("Botón presionado");
+        };
+    </pre>
+    <p><b>Manipulación del DOM:</b> Permite modificar elementos HTML desde JavaScript.</p>
+    <pre>
+        document.querySelector("h1").textContent = "Nuevo Título";
+    </pre>
+
+    <footer>
+        <p>Apuntes de Programación Web</p>
+    </footer>
+</body>
+</html>
